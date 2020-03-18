@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <form action="/this_user" method="POST">
+      <select name="name">
+        <% @users.each do |user| %>
+          <option value=<%= user.name %>><%= user.name %></option>
+        <% end %>
+      </select>
+      <input type="submit" value="Find">
+    </form>
+  </body>
+</html>
