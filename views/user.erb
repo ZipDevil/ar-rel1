@@ -1,4 +1,8 @@
 <p>User id: <%= @user.id.to_s %></p>
 <p>Name: <%= @user.name %></p>
 <p>Email: <%= @user.email %></p>
+<% if @user.team %>
 <p>Team: <%= @user.team.name %></p>
+<% else %>
+<p>No team assigned to this user.</p>
+<% end %>

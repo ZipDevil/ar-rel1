@@ -3,7 +3,7 @@
   <head>
   </head>
   <body>
-    <form action="/this_user" method="POST">
+    <form action="/show_user" method="POST">
       <select name="name">
         <% @users.each do |user| %>
           <option value=<%= user.name %>><%= user.name %></option>

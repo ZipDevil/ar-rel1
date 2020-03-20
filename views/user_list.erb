@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h2>User list:</h2>
+    <% @users.each do |u| %>
+    <% @link = "/user/#{u.id}" %>
+    <p>
+    name: <%= u.name %><br>
+    email: <%= u.email %><br>
+    <a href="<%= @link %>">more info</a>
+    </p>
+    <% end %>
+    <br>
+    <a href='/new'>Create new user</a><br>
+    <a href='/remove'>Delete a user</a>
+    
+  </body>
+</html>
+  

@@ -1,7 +1,7 @@
 <form action="/show_user" method="post">
     <p>Users:</p>
     <% @users.each do |u| %>
-      <p><%=u.name %></p>
+      <p><%= u.name %></p>
     <% end %>
     <br>
     <label for="username">User name:</label>
